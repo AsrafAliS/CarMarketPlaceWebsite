@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Booking - Elite Cars World</title>
+    <style>
+        /* Your existing CSS styles */
+        /* ... */
+
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container Styles */
+        .container {
+            display: flex;
+            justify-content: center; /* Center the container horizontally */
+            align-items: center;
+            height: 120vh;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Sign-in Box Styles */
+        .signin-box {
+            background-color: rgba(23, 22, 22, 0.9);
+            padding: 40px 20px;
+            border-radius: 3px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            width: 800px;
+            max-width: 90%; /* Adjust width */
+        }
+
+        /* Sign-in Box Title Styles */
+        .signin-box h2 {
+            font-size: 1.8rem;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 20px;
+            text-align: center;
+            color: aliceblue;
+        }
+
+        /* Sign-in Box Title Styles */
+        .signin-box h4 {
+            font-size: 1.2rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-bottom: 4%;
+            margin-top: 0%;
+            margin-left: 35px;
+            /* Adjust margin as needed */
+            text-align: left;
+            /* Align the text to the left */
+            color: aliceblue;
+        }
+
+        /* Sign-in Form Input Styles */
+        .signin-box input[type="text"],
+        .signin-box input[type="email"],
+        .signin-box input[type="tel"],
+        .signin-box textarea {
+            width: calc(50% - 65px); /* Adjust width as needed */
+            padding: 10px;
+            margin-left: 32px;
+            border: none;
+            border-bottom: 1px solid transparent;
+            border-radius: 0;
+            box-sizing: border-box;
+            background-color: rgba(109, 100, 100, 0.4);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            color: #fff;
+            margin-bottom: 25px; /* Add space below each text field */
+        }
+
+        /* Sign-in Button Styles */
+        .signin-box .btn-signin {
+            width: 20%; /* Adjust width as needed */
+            padding: 10px;
+            background-color: #E50914; /* Netflix red */
+            color: #fff;
+            border: none;
+            border-radius: 1px;
+            cursor: pointer;
+            margin-top: 20px; /* Adjust margin */
+            margin-left: 290px; /* Adjust margin */
+            transition: background-color 0.3s ease;
+        }
+
+        .signin-box .btn-signin:hover {
+            background-color: #BB0412; /* Darker red on hover */
+        }
+
+        /* New to Elite Cars Styles */
+        .new-to-elite-cars {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .new-to-elite-cars p {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .new-to-elite-cars a {
+            color: #E50914; /* Netflix red */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .new-to-elite-cars a:hover {
+            text-decoration: underline;
+        }
+
+        /* Placeholder Styles */
+        .signin-box input[type="text"]::placeholder,
+        .signin-box input[type="email"]::placeholder,
+        .signin-box input[type="tel"]::placeholder,
+        .signin-box textarea::placeholder {
+            color: rgba(83, 83, 79, 0.5); /* Custom RGB color with 50% opacity */
+        }
+
+        /* Apply transition to the placeholder text */
+        .signin-box input[type="text"]::placeholder,
+        .signin-box input[type="email"]::placeholder,
+        .signin-box input[type="tel"]::placeholder,
+        .signin-box textarea::placeholder {
+            font-size: 14px; /* Adjust font size as needed */
+            transition: transform 0.3s ease; /* Smooth transition */
+            transform-origin: top left; /* Set transform origin to top left */
+        }
+
+        /* Change transform property of placeholder text when input field is focused */
+        .signin-box input[type="text"]:focus::placeholder,
+        .signin-box input[type="email"]:focus::placeholder,
+        .signin-box input[type="tel"]:focus::placeholder,
+        .signin-box textarea:focus::placeholder {
+            transform: translateY(-100%) scale(0.8); /* Adjust translateY value as needed */
+        }
+
+        /* Custom CSS for Date Input */
+        input[type="datetime-local"] {
+            width: calc(50% - 65px);
+            padding: 10px;
+            margin-left: 32px;
+            border: none;
+            border-bottom: 1px solid transparent;
+            border-radius: 0;
+            box-sizing: border-box;
+            background-color: rgba(109, 100, 100, 0.4);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            color: #fff;
+            margin-bottom: 25px;
+        }
+        
+        /* Success Message Styles */
+        .success-message {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            border-radius: 5px;
+            display: none; /* Hide by default */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="signin-box">
+            <h2>Service Booking - Elite Cars World</h2>
+            <h4>Fill out the form below to book your car service:</h4>
+
+            <!-- Form -->
+            <form class="signin-form" action="submit_contact.php" method="post">
+                <!-- Form fields -->
+                <div style="display: flex;">
+                    <input type="text" name="name" placeholder="Your Name" required style="margin-right: 10px;">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div style="display: flex;">
+                    <input type="tel" name="phone" placeholder="Your Phone Number" required style="margin-right: 10px;">
+                    <input type="text" name="address" placeholder="Your Address" required>
+                </div>
+                
+                <!-- New service booking fields -->
+                <input type="text" name="make" placeholder="Car Make" required style="margin-right: 10px;">
+                <input type="text" name="model" placeholder="Car Model" required>
+                <input type="text" name="year" placeholder="Car Year" required style="margin-right: 10px;">
+                <input type="text" name="license_plate" placeholder="License Plate Number" required>
+                <input type="text" name="service_type" placeholder="Service Type" required style="margin-right: 10px;">
+                <input type="datetime-local" name="preferred_date_time" placeholder="Preferred Date and Time" required>
+
+                <textarea name="message" placeholder="Your Message" required style="width: calc(100% - 65px); padding: 10px; margin-left: 32px; border: none; border-bottom: 1px solid transparent; border-radius: 0; box-sizing: border-box; background-color: rgba(109, 100, 100, 0.4); box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); color: #fff; margin-bottom: 25px;"></textarea>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-signin">Book Service</button>
+            </form>
+
+            <!-- Success message -->
+            <div class="success-message" id="successMessage">
+                Your service has been booked successfully!
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to show the success message after form submission
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector('.signin-form');
+            const successMessage = document.getElementById('successMessage');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the form from submitting
+
+                // Show the success message
+                successMessage.style.display = 'block';
+
+                // Optional: You can also hide the form after submission if needed
+                form.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>

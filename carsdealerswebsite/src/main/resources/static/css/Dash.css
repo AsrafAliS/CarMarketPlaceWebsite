@@ -1,0 +1,72 @@
+
+
+.image-containerBmw {
+    position: relative; /* Ensure relative positioning */
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+  }
+  
+  .full-width-imageBmw {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  
+  
+  
+  
+  
+  .custom-buttonBmw {
+    background-color: #0166B1;
+    top:61.2%;
+    left:30%;
+    position: absolute;
+    color: black;
+    border: 1px solid #0166B1;
+    padding: 11px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-buttonBmw:hover {
+    background-color: lightgray;
+  }
+  
+  
+  .titleBmw {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding shadow for better visibility */
+  }
+  
+  .sub-paragraphBmw {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.2em;
+    max-width: 70%;
+    text-align: center;
+  }
+  
+  
+  .overlayBmw {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  }
+  
+  /* Rest of your CSS for buttons and image */
+  

@@ -1,0 +1,64 @@
+.navbarbenz {
+    background-color:black;
+    height: 60px; /* You can adjust the height as needed */
+    width: 100%; /* Navbar spans the full width of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbarbenz img {
+    height: 40px; /* Adjust the size of your icon as needed */
+    width: auto; /* Adjust the size of your icon as needed */
+    justify-content: center;
+    justify-items: center;
+  }
+
+
+  body{
+   background-color: black;
+   margin: 0;
+   border-radius: 0;
+  }
+
+
+
+  .menubenz {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Offscreen by default */
+    width: 250px;
+    height: 100%;
+    background-color: black;
+    transition: left 0.3s ease; /* Add smooth transition effect */
+  }
+  
+  .menu-contentbenz {
+    padding: 20px;
+    color: white;
+  }
+  
+  .menubenz ul {
+    list-style-type: none;
+    padding: 0;
+    
+  }
+  
+  
+  .menubenz ul li {
+    padding: 10px 0;
+   
+  }
+  
+  .close-iconbenz {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+ .menu-iconbenz img{
+    margin-left: -640px;
+    width:24px;
+    height:auto;
+ }

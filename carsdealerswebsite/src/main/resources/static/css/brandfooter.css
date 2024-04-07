@@ -1,0 +1,75 @@
+/* Update the CSS for the copyright notice */
+.custom-footerb {
+    background-color: black;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 40px;
+    position: relative; /* Ensure proper positioning of the copyright notice */
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+
+
+.footer-dividerb {
+    border-top: 1px solid white;
+    margin-bottom: 0; /* Remove margin to ensure the line is flush with the footer */
+}
+
+.copyrightb {
+    position: absolute;
+    bottom: 10px; /* Adjust bottom spacing */
+    left: 12%;
+    transform: translateX(-50%);
+    color: white; /* Ensure the text color matches the footer */
+    font-size: small;
+}
+
+.social-iconsb {
+    position: absolute;
+    bottom: 10px; /* Adjust bottom spacing */
+    right: 8%; /* Adjust right spacing */
+}
+
+.social-iconsb a {
+    color: white; /* Set the color of the social media icons */
+    text-decoration: none; /* Remove underline from the icons */
+    margin-left: 10px; /* Add spacing between the icons */
+    font-size: small; /* Adjust the size of the icons */
+}
+
+.social-iconsb a:hover {
+    color: #E50914; /* Change color on hover */
+}
+
+/* Update the CSS for the footer links */
+.footer-linksb {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    padding-bottom: 0; /* Remove default padding */
+}
+
+.footer-linksb li {
+    margin-bottom: 10px; /* Add spacing between list items */
+}
+
+.footer-linksb a {
+    color: white; /* Set link color */
+    text-decoration: none;
+    font-size: small;
+    /* Remove underline from links */
+}
+
+.footer-linksb a:hover {
+    color: #E50914; /* Change link color on hover */
+}
+
+.footer-links-containerb {
+    display: inline-block; /* Change display property to inline-block */
+    width: 25%; /* Set width to 25% to create four equal-width columns */
+    padding: 40px 15px; /* Add padding to create space between columns */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    vertical-align: top; /* Align containers to the top */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+    padding-bottom: 40px !important;
+}

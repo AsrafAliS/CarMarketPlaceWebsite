@@ -1,0 +1,129 @@
+.navbarspec {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    padding: 0 25px; /* Add padding as needed */
+    margin-bottom: 5px;
+}
+
+.navbarspec img {
+    height: 40px; /* Adjust the size of your icon as needed */
+    width: auto; /* Adjust the size of your icon as needed */
+    margin-left: 0%;
+   
+}
+
+.menuspec {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Offscreen by default */
+    width: 250px;
+    height: 100%;
+    background-color: black;
+    transition: left 0.3s ease; /* Add smooth transition effect */
+}
+
+.menu-contentspec {
+    padding: 20px;
+    color: white;
+}
+
+.menuspec ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menuspec ul li {
+    padding: 10px 0;
+}
+
+.close-iconspec {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+.summary-button {
+    background-color:#0069b9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.summary-button:hover {
+    background-color: #333; /* Darken the background color on hover */
+}
+
+
+/* Styling for the button */
+.summary-button {
+    position: absolute;
+    right: 115px;
+   
+}
+
+
+/* Styling for the BMW logo wrapper */
+.bmw-logo-wrapper {
+    position: absolute;
+    right: 15px;
+    
+}
+
+/* Styling for the vertical line */
+.button-divider {
+    width: 1px;
+    background-color: black;
+    height: 1.8em; /* Adjust height to match button size */
+    margin-right: 0px; /* Adjust margin as needed */
+    position: absolute;
+    right: 310px;
+    margin-left: 0 !important;
+    
+}
+
+
+
+
+/* Add this CSS to your stylesheet */
+
+/* Add this CSS to your stylesheet */
+
+/* Button styles */
+.carspecbutton {
+    background-color: white;
+    color: black; /* Change text color to black */
+    border: none;
+    border-bottom: 2px solid transparent; /* Set border color as transparent initially */
+    font-family: "Arial", sans-serif; /* Replace "Arial" with your desired font */
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Transition border color, background color, and box shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+/* Button hover effect */
+.carspecbutton:hover {
+    background-color: #f0f0f0; /* Change to desired hover background color */
+    border-bottom-color: black; /* Change the border color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow size on hover */
+}
+
+
+    .navbarspec .carspecbutton {
+        margin-right: 20px; /* Increase this value to move the buttons further to the right */
+    
+       
+    }
+
+    .placeit {
+        position: absolute;
+        right: 400px;
+    }
+
+  
+
+

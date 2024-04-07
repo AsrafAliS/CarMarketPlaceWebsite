@@ -1,0 +1,66 @@
+/* Styles for the brand icons container */
+.brand-icons-container-ofcompany {
+    padding-top: 0px;
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Center the icons vertically */
+    margin-top: 0px;
+    height: 140px;
+}
+
+/* Styles for individual brand icons */
+.brand-icon-ofcompany {
+    width: 70px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 30px;
+    margin-right: 50px; /* Add margin between the icons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.brand-icon-ofcompany:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+.viewposition-ofcompany {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Additional Brand Icons (initially hidden) */
+.brand-icons-container-ofcompany#additionalIconsOfcompany {
+    display: none;
+}
+
+/* Hide specific brand icons */
+.brand-icons-container-ofcompany a:nth-child(n+6) {
+    display: none;
+}
+
+/* CSS for the heading */
+.partnership-heading-ofcompany {
+    color: white; /* Red color */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Bold font weight */
+    text-transform: uppercase;
+    text-align: center;
+    font-size: large;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 20px;
+}
+
+/* View more interaction */
+.viewposition-ofcompany {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.viewposition-ofcompany:hover {
+    color: #E50914; /* Change text color on hover to Netflix red */
+}
+
+.container-fifth-ofcompany {
+    background-color: black;
+    color: black;
+}

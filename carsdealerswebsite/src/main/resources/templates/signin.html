@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Elite Cars World</title>
+    <style>
+        /* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Sign-in Box Styles */
+.signin-box {
+    background-color: rgba(23, 22, 22, 0.9);
+    padding: 40px 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    height: 400px;
+}
+
+/* Sign-in Box Title Styles */
+.signin-box h2 {
+    font-size: 1.8rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+/* Sign-in Box Title Styles */
+.signin-box h4{
+    font-size: 1.2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 4%;
+    margin-top:0%;
+    margin-left:35px;
+    /* Adjust margin as needed */
+    text-align: left; 
+    /* Align the text to the left */
+    color: aliceblue;
+}
+
+/* Sign-in Form Input Styles */
+.signin-form input[type="text"],
+.signin-form input[type="password"] {
+    width: calc(100% - 65px); /* Adjust width as needed */
+    padding: 10px;
+    margin-left: 32px;
+    border: none;
+    border-bottom: 1px solid transparent;
+    border-radius: 0;
+    box-sizing: border-box;
+    background-color: rgba(109, 100, 100, 0.4);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+/* Sign-in Form Input Focus Styles */
+.signin-form input[type="text"]:focus,
+.signin-form input[type="password"]:focus {
+    border-bottom-color: #E50914; /* Netflix red */
+    outline: none;
+}
+
+/* Sign-in Form Input Placeholder Styles */
+.signin-form input[type="text"]:focus::placeholder,
+.signin-form input[type="password"]:focus::placeholder {
+    font-size: 10px;
+    transform: translateY(-120%);
+}
+
+/* Sign-in Button Styles */
+.btn-signin {
+    width: 40%;
+    padding: 10px;
+    background-color: #E50914; /* Netflix red */
+    color: #fff;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    margin-top: 70px;
+    margin-left: 85px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-signin:hover {
+    background-color: #BB0412; /* Darker red on hover */
+}
+
+/* New to Elite Cars Styles */
+.new-to-elite-cars {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.new-to-elite-cars p {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.new-to-elite-cars a {
+    color: #E50914; /* Netflix red */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.new-to-elite-cars a:hover {
+    text-decoration: underline;
+}
+
+/* Placeholder Styles */
+.signup-form input[type="text"]::placeholder,
+.signup-form input[type="password"]::placeholder {
+    color: rgba(83, 83, 79, 0.5); /* Custom RGB color with 50% opacity */
+}
+
+
+/*space only below text field*/
+
+.signin-form input[type="text"] {
+    margin-bottom: 25px; /* Add space below the first text field */
+}
+
+/* smopth transition*/
+
+/* Apply transition to the placeholder text */
+.signin-form input[type="text"]::placeholder,
+.signin-form input[type="password"]::placeholder {
+    font-size: 14px; /* Adjust font size as needed */
+    transition: transform 0.3s ease; /* Smooth transition */
+    transform-origin: top left; /* Set transform origin to top left */
+}
+
+/* Change transform property of placeholder text when input field is focused */
+.signin-form input[type="text"]:focus::placeholder,
+.signin-form input[type="password"]:focus::placeholder {
+    transform: translateY(-100%) scale(0.8); /* Adjust translateY value as needed */
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="signin-box">
+            <h2>World+</h2>
+            <h4> Sign In </h4>
+
+            <form class="signin-form" action="/signinpoint" method="post">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit" class="btn btn-signin">Sign In</button>
+            </form>
+            <div class="new-to-elite-cars">
+                <p>New to Elite Cars?</p>
+                <a href="/signup">Sign up!</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

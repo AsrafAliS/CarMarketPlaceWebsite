@@ -1,0 +1,109 @@
+/* Container styles */
+#custom-subscribe-container {
+    background-color: #333;
+    width: 100%;
+    height: 300px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+/* Email input styles */
+#custom-email-input {
+    color: white;
+    border: none;
+    border-bottom: 2px solid grey;
+    background-color: transparent;
+    width: 200px;
+    padding: 5px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 110px;
+    transform-origin: left;
+    transition: width 0.3s ease, transform 0.3s ease;
+}
+
+#custom-email-input::placeholder {
+    color: grey;
+    font-style: italic;
+    font-size: 16px;
+    transition: font-size 0.3s ease;
+}
+
+#custom-email-input:focus::placeholder {
+    font-size: 10px;
+}
+
+/* Button styles */
+.custom-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 110px;
+    margin-left: 310px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.custom-btn:hover {
+    background-color: #45a049;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Subscribe text styles */
+.custom-subscribe-text {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.custom-subscribe-text h2 {
+    font-family: var(--font-family-primary);
+    font-size: 30px;
+    color: blanchedalmond;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.custom-subscribe-text h2::before {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: #4CAF50;
+    transition: height 0.3s ease;
+}
+
+.custom-subscribe-text h2:hover::before {
+    height: 4px;
+}
+
+
+ /* CSS for animation */
+    .fade-in {
+        animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }

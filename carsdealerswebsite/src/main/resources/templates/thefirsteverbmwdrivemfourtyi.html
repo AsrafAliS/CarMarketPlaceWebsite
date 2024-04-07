@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details with Navbar</title>
+    <link rel="stylesheet" href="/css/carsspec.css">
+    <link rel="stylesheet" href="/css/navbarspec.css">
+
+
+    <!-- Links for the first home slides content-->
+    <!-- Starting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css">
+    <link rel="stylesheet" href="/css/homeforcarspec.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <link rel="stylesheet" href="/css/footerforspec.css">
+</head>
+<body>
+
+
+
+    <div class="viewport">
+ <!-- Navbar section-->
+<div class="navbarspec">
+    <div class="menu-iconspec" onclick="toggleMenu()">
+        <img src="/icons/icons8-menu-50.png" alt="Menu">
+    </div>
+    <div class="menuspec" id="menu">
+        <div class="menu-contentbenz">
+            <ul>
+                <li>Action 1</li>
+                <li>Action 2</li>
+                <li>Action 3</li>
+            </ul>
+        </div>
+        <div class="close-iconspec" onclick="toggleMenu()">
+            <img src="/icons/icons8-close-100.png" alt="Close">
+        </div>
+    </div>
+    <div class="button-divider"></div> <!-- This will be the vertical line -->
+    <button class="summary-button">Summary</button>
+    <div class="bmw-logo-wrapper">
+        <img src="/icons/BMW-Logo.png" alt="Icon">
+    </div>
+
+   <div class="placeit">
+    <!-- Other navbar content -->
+    <!-- Other navbar content -->
+    <button class="carspecbutton" onclick="scrollToSection('section1')">Engine</button>
+    <button class="carspecbutton" onclick="scrollToSection('section2')">Model Varient</button>
+    <button class="carspecbutton" onclick="scrollToSection('section3')">Callback</button>
+    <button class="carspecbutton" onclick="scrollToSection('section4')">Action 4</button>
+    <button class="carspecbutton" onclick="scrollToSection('section5')">Action 5</button>
+    </div>
+</div>
+
+
+<div class="main-container">
+
+<div class="homecontainer">
+    <div class="hero-slider" data-carousel>
+        <!-- Carousel cells -->
+        <div class="carousel-cell" style="background-image:url(/bmwmodelsslide/m5slide1.png);">
+            <div class="overlay"></div>
+            <div class="inner">
+               
+                <h2 class="title">Make Your Life Elite</h2>
+                <h3 class="subtitle">The Place Your Journey Kick Starts.</h3>
+                <a href="https://flickity.metafizzy.co/" target="_blank" class="btn">Tell me more</a>
+            </div>
+        </div>
+        <!-- Additional carousel cells -->
+        <div class="carousel-cell" style="background-image:url(/bmwmodelsslide/m5slide2.png);">
+            <div class="overlay"></div>
+            <div class="inner">
+                <h3 class="subtitle">Slide 2</h3>
+                <h2 class="title">Explore Out Partners</h2>
+                <a href="#" class="btn">Book You Drive </a>
+            </div>
+        </div>
+        <div class="carousel-cell" style="background-image:url(/bmwmodelsslide/m5slide3.png);">
+            <div class="overlay"></div>
+            <div class="inner">
+                
+                <h2 class="title">Explore Our Partners</h2>
+                <a href="#" class="btn">Link</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="car-details-wrapper">
+    <div class="car-details-container" id="carDetailsContainer">
+        <!-- Section indicators -->
+       
+
+       <!-- Car details sections -->
+        <!-- Section 1 -->
+        <section id="section1" class="car-section">
+            
+            <!-- Engines -->
+            <div class="info-box">
+                <h3 class="sub-heading">ENGINES</h3>
+                <div class="engine-details">
+                    <p>iX xDrive50 Basic Line</p>
+                    <p>Electric</p>
+                    <p>From ₹1,39,50,000</p>
+                    <div class="transmission-details">
+                        <p>Transmission</p>
+                        <p>Manual</p>
+                    </div>
+                    <p class="expand-details" onclick="toggleDetails('section1-details')">
+                        Transmission and Technical Data <i class="fas fa-angle-down"></i>
+                    </p>
+                    <div id="section1-details" class="details-hidden">
+                        <ul>
+                            <li>Fuel type: Electric</li>
+                            <li>Transmission: Manual</li>
+                            <li>System performance: 385 kW (523 PS)</li>
+                            <li>Drive Type: N/A</li>
+                            <li>Acceleration (0-100 km/h): 4.6 sec</li>
+                            <li>Energy consumption: N/A kWh/100 km</li>
+                            <li>CO2 Emission (combined): 0 g/km</li>
+                            <li>Range: N/A km</li>
+                            <li>Battery size (gross/net): 111.5 kWh / 108.8 kWh</li>
+                            <li>Charging time (AC, 0-100% SOC): 11 h</li>
+                            <li>Max. charging performance AC: 11 kW</li>
+                            <li>Charging time (DC, 10-80% SOC): 35 min</li>
+                            <li>Max. charging performance DC: 195 kW</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="sub-heading">BASIC EQUIPMENT</h3>
+            <!-- Inside Section 1 -->
+            <p class="basic-equipment" id="basicEquipmentBtn">Basic Equipment</p>
+
+            <hr>
+        </section>
+        <!-- Section 2 -->
+        <section id="section2" class="car-section">
+            <div class="info-box section2-info-box">
+                <h2>Car Model: Honda Civic</h2>
+                <h3 class="sub-heading">Model Variant</h3>
+                <!-- Model Variant Details -->
+                <p>Variant: <span class="variant-name">Type R</span></p>
+                <p>Engine: 2.0L Turbocharged</p>
+                <p>Transmission: Manual</p>
+                <p>Color Options: Red, Blue, Black</p>
+                <p>Price: $35,000</p>
+                
+                <!-- Box for Additional Details -->
+                <div class="info-box">
+                    <h3 class="sub-heading">Additional Details</h3>
+                    <p>Basic Line</p>
+                    <p>From ₹1,39,50,000</p>
+                    <p class="more-details" onclick="openForm()">More Details <i class="fas fa-chevron-down"></i></p>
+                </div>
+            </div>
+        </section>
+       <!-- Section 3 -->
+<!-- Section 3 -->
+<section id="section3" class="car-section section3">
+   
+    <!-- Your Configuration -->
+    <div class="configuration-info">
+        <h3 class="sub-heading">Your Configuration is Ready!</h3>
+        <p class="car-model">iX xDrive50 Basic Line</p>
+        <p class="price">Total Price: $50,000</p>
+        <hr>
+        <!-- Find a Dealer -->
+        <div class="find-dealer">
+            <a href="https://www.bmw.in/en/fastlane/dealer-locator.html/" target="_blank">
+                 Find a Dealer<img src="/specifications/location.png" alt="Location Symbol">
+            </a>
+        </div>
+        <!-- Summary Option -->
+        <div class="summary-option">
+            <a href="https://configure.bmw.in/en_IN/summary/I20/22CF_ZH1Q/FSACX,P0C1M,S01LB,S02VB,S02VR,S0300,S0322,S0323,S0330,S0358,S0407,S0428,S042A,S04AA,S04FM,S04NB,S04U9,S04V1,S05AS,S05DN,S0688,S06C3,S06CP,S06NX,S06U7">Summary</a>
+        </div>
+    </div>
+    <!-- Test Drive and Buy Online Buttons -->
+    <div class="action-buttons">
+        <button  id="testDriveBtn" class="test-drive-button">Test Drive</button>
+        <button id="buyOnlineBtn" class="buy-online-button">Buy Online</button>
+    </div>
+    <!-- Request a Call Back -->
+    <div class="request-call-back">
+        <a href="/callback" target="_blank">Request a Call Back</a>
+    </div>
+</section>
+
+       
+
+    </div>
+</div>
+
+</div>
+
+
+<div class="text-container">
+    <div class="model" >
+        <h4 class="modelname">iX xDrive50<span> BASIC LINE</span></h4>
+    </div>
+
+    <button class="summary-button2">Summary</button>
+    <div class="additional-text">
+        <p>Total price</p>
+        <p class="price">₹ 50,000</p>
+    </div>
+</div>
+    </div>
+<hr>
+
+
+
+<div class="footerclass">
+<footer class="footerforcarspec">
+    <div class="footer-contentcarspec">
+        <div class="copyrightcarspec">Copyright &copy; 2024 Your Company</div>
+        <div class="footer-linkscarspec">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </div>
+    </div>
+</footer>
+</div>
+
+
+
+
+
+
+
+<script src="/carsspecs.js"></script>
+
+
+<!-- Links for the first home slides content -->
+    <!--starting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
+    <script src="/homeforcarspec.js"></script>
+
+    <!-- Ending -->
+
+
+
+
+<!--   The additional pop up content -->
+    <!-- Form markup (you can place it anywhere in your HTML) -->
+<div id="carFormPopup" class="car-form-popup">
+    <form class="car-form-container">
+        <h2>Basic Equipment Form</h2>
+        <!-- Add your form fields here -->
+        <button type="button" class="car-btn car-cancel" onclick="closeCarForm()">Close</button>
+    </form>
+</div>
+
+
+    <!-- Form Popup -->
+<div id="formPopupSection2" class="car-form-popup2">
+    <form class="car-form-container2">
+        <h2>Additional Details</h2>
+        <p>Form fields go here...</p>
+        <button type="button" class="car-btn car-cancel2" onclick="closeForm()">Close</button>
+    </form>
+</div>
+
+</body>
+</html>

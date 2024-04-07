@@ -1,0 +1,345 @@
+.car-details-wrapper {
+    flex: 0 0 25%; /* Set the width of the car details container */
+    height: 403px;
+    margin-left: 0; /* Remove default margin */
+    padding-left: 0; /* Remove default padding */
+    margin-right: 0; /* Remove default margin */
+    padding-right: 0; /* Remove default padding */
+}
+
+
+.car-details-container {
+    height: 497px; /* Adjust the height as needed */
+    border: 1px solid #ccc;
+    overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+/* Custom scrollbar */
+.car-details-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.car-details-container::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 4px;
+}
+
+.car-details-container::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+/* Styling for the sections */
+.car-section {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px; /* Add space between sections */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Active state for navbar buttons */
+.active {
+    background-color: #f0f0f0; /* Change to desired active background color */
+}
+
+
+.car-section {
+    margin-bottom: 20px;
+}
+
+.info-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+}
+
+.sub-heading {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.engine-details {
+    padding: 10px;
+}
+
+.transmission-details {
+    margin-bottom: 10px;
+}
+
+.transmission-details p {
+    margin: 0;
+}
+
+.expand-details {
+    cursor: pointer;
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.expand-details:hover {
+    color: #0056b3;
+}
+
+.details-hidden {
+    display: none;
+}
+
+.details-visible {
+    display: block;
+    animation: slide-down 0.5s ease;
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.basic-equipment {
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.basic-equipment:hover {
+    color: #0056b3;
+}
+
+.hr-line {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+
+
+/* Add styles for form popup */
+.car-form-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+}
+
+.car-form-container {
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.car-form-container h2 {
+    text-align: center;
+}
+
+.car-form-container input[type=text],
+.car-form-container input[type=email],
+.car-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.car-form-container button {
+    background-color: #007bff;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.car-form-container button:hover {
+    opacity: 0.8;
+}
+
+/* Add styles for close button */
+.car-btn.car-cancel {
+    background-color: #ccc;
+}
+
+
+
+/*section 2*/
+
+
+/* Additional styles for Section 2 */
+
+
+/* Styles for form popup */
+.car-form-popup2 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.car-form-popup2.show {
+    display: block;
+    opacity: 1;
+}
+
+.car-form-container2 {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.car-form-container2 h2 {
+    text-align: center;
+}
+
+.car-form-container2 p {
+    margin-bottom: 10px;
+}
+
+.car-form-container2 button {
+    background-color: #007bff;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+
+.car-form-container2 button:hover {
+    opacity: 0.8;
+}
+
+/* Add styles for close button */
+.car-btn.car-cancel2 {
+    background-color: #ccc;
+}
+
+.more-details {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.more-details i {
+    margin-left: 5px;
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+
+.more-details:hover i {
+    transform: rotate(180deg);
+}
+
+
+/* Section 3 Styles */
+.section3 .configuration-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section3 .sub-heading {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.section3 .car-model {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.section3 .price {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.section3 hr {
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+
+.section3 .find-dealer,
+.section3 .summary-option {
+    margin-top: 20px;
+    text-align: start;
+}
+
+.section3 .find-dealer a,
+.section3 .summary-option a {
+    text-decoration: none;
+    color: #007bff; /* Blue color */
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.section3 .find-dealer a:hover,
+.section3 .summary-option a:hover {
+    color: #0a53be; /* BMW blue color on hover */
+    cursor: pointer;
+}
+
+.section3 .find-dealer img {
+    width: 18px;
+    margin-right: 5px;
+
+}
+
+.section3 .action-buttons {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.section3 .test-drive-button,
+.section3 .buy-online-button {
+    padding: 10px 20px;
+    color: #000;
+    background-color: transparent;
+    border: 2px solid #000; /* Black border */
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Added border-color transition */
+}
+
+.section3 .test-drive-button:hover,
+.section3 .buy-online-button:hover {
+    background-color: #000; /* Black background on hover */
+    color: #fff; /* White text on hover */
+    border-color: #000; /* Black border on hover */
+}
+
+.section3 .request-call-back {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.section3 .request-call-back a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
